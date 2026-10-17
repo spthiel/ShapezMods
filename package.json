@@ -1,0 +1,49 @@
+{
+  "name": "shapezmod",
+  "version": "1.0.0",
+  "description": "Shapezmod that does stuff.",
+  "homepage": "https://elspeth.xyz/shapez-mod",
+  "author": "Elspeth",
+  "type": "module",
+  "scripts": {
+    "setup-----------------------------------------": "",
+    "setup#comment": "Commands setting up the dev system and shapez runner.",
+    "setup": "run-s setup:*",
+    "setup:clone-shapez": "node scripts/initShapez/cloneShapez.ts",
+    "setup:init-shapez": "node scripts/initShapez/initShapez.ts",
+    "setup:shapez-types": "node scripts/initShapez/buildShapezTypes.ts",
+    "setup:build-shapez": "node scripts/initShapez/buildShapez.ts",
+    "build-----------------------------------------": "",
+    "build#comment": "Build mod for final game",
+    "build": "rolldown -c",
+    "fix-------------------------------------------": "",
+    "fix#comment": "Run linting and formatting",
+    "fix": "run-p fix:*",
+    "fix:format": "oxfmt",
+    "fix:lint": "oxlint --fix",
+    "check-----------------------------------------": "",
+    "check#comment": "Run lint and format checking.",
+    "check": "run-p check:*",
+    "check:format": "oxfmt --check",
+    "check:lint": "oxlint --deny-warnings",
+    "dev-------------------------------------------": "",
+    "dev#comment": "Run build in dev shapez environment",
+    "dev": "run-s dev:*",
+    "dev:prepare": "npm run build",
+    "dev:launch": "./shapez/build_output/standalone-steam/shapez-linux-x64/shapezio --load-mod=dist/shapezMod.mod.js"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "eslint-plugin-simple-import-sort": "14.0.0",
+    "npm-run-all": "4.1.5",
+    "oxfmt": "0.73.0",
+    "oxlint": "1.88.0",
+    "rolldown": "1.2.14",
+    "typescript": "7.0.2"
+  },
+  "shapezData": {
+    "name": "ShapezMod",
+    "settings": {},
+    "doesNotAffectSavegame": false
+  }
+}
