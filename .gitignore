@@ -17,3 +17,5 @@ yarn-error.log*
 
 /src/types/shapez.d.ts
 enabled-mods.json
+
+/z_mods/*/node_modules

@@ -6,12 +6,6 @@
   "author": "Elspeth",
   "type": "module",
   "scripts": {},
-  "dependencies": {
-    "is-even": "^1.0.0"
-  },
-  "devDependencies": {
-    "@types/is-even": "^1.0.2"
-  },
   "shapezData": {
     "name": "Ore Patches",
     "settings": {},
