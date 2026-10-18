@@ -1,0 +1,20 @@
+{
+  "name": "orepatches",
+  "version": "1.0.0",
+  "description": "Shapezmod that replaces all shape and color patches with customizable ore patches.",
+  "homepage": "https://elspeth.xyz/shapez-mods",
+  "author": "Elspeth",
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "is-even": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/is-even": "^1.0.2"
+  },
+  "shapezData": {
+    "name": "Ore Patches",
+    "settings": {},
+    "doesNotAffectSavegame": false
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "@/*": [
+                "./src/"
+            ],
+            "shared:*": [
+                "./src/shared/*"
+            ],
+            "orepatches:*": [
+                "./z_mods/OrePatches/src/*"
+            ]
+        }
+    }
+}

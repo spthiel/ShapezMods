@@ -16,3 +16,4 @@ yarn-error.log*
 /dist/
 
 /src/types/shapez.d.ts
+enabled-mods.json
