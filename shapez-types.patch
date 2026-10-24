@@ -1,0 +1,15 @@
+Index: src/types/shapez.d.ts
+===================================================================
+--- src/types/shapez.d.ts
++++ src/types/shapez.d.ts
+@@ -8935,9 +8935,9 @@
+          */
+         replaceMethod<C extends {
+             new (...args: any[]): any;
+             prototype: any;
+-        }, P extends C["prototype"], M extends keyof P, O extends (args_0: any, ...args_1: any[]) => ReturnType<P[M]>>(classHandle: C, methodName: M, override: (this: InstanceType<C>, args_0: P[M], args_1: Parameters<O>) => ReturnType<O>): void;
++        }, P extends C["prototype"], M extends keyof P>(classHandle: C, methodName: M, override: (this: InstanceType<C>, oldMethod: P[M], args: Parameters<P[M]>) => ReturnType<P[M]>): void;
+         /**
+          * Runs before a method on a given class
+          * @template {constructable} C  the class
+          * @template {C["prototype"]} P  the prototype of said class
