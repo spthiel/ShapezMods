@@ -13,3 +13,15 @@ Index: src/types/shapez.d.ts
           * Runs before a method on a given class
           * @template {constructable} C  the class
           * @template {C["prototype"]} P  the prototype of said class
+@@ -9135,10 +9135,9 @@
+         website: string;
+         description: string;
+         id: string;
+         minimumGameVersion?: string;
+-        settings: [
+-        ];
++        settings: {};
+         doesNotAffectSavegame?: boolean;
+     };
+     // Origin module: "savegame/savegame"
+     /**
